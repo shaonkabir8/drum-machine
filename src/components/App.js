@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import '../styles/App.scss';
 
 const App = () => {
@@ -22,6 +22,19 @@ const App = () => {
   // This will be modified later while deploying on Netlify
   // set listener for window Object
   window.addEventListener('keydown', playSound);
+
+
+  // functionalities to interact with after effects of playing Audio
+  useEffect(() => {
+    // grab all keys and convert them from [NodeList] to [Array] 
+    // Loop through the array & add eventlistener for [transitonend] event
+    const keys = Array.from(document.querySelectorAll('.key'));
+    keys.forEach(key => key.addEventListener('transitionend', e => {
+      if (e.propertyName !== 'transform') return;
+      e.target.classList.remove('playing');
+    }));
+  }, [])
+
 
   return ( 
     <Fragment>
