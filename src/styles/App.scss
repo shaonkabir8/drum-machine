@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Russo One;
+  user-select: none;
+  background-color: lighten(grey, 5%);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+}
+
