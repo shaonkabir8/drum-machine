@@ -18,11 +18,12 @@ body {
   align-items: center; 
   height: 100vh;
 }
-.key-container {
-  outline: 5px solid orange;
+.drum-container {
+  outline: 3px dashed #797878;
   position: relative;
   width: 660px;
-  background-color: lighten(grey, 20%);
+  background-color: #959494;
+  box-shadow: 0 0 20px;
 }
 
 .keys {
@@ -51,9 +52,14 @@ body {
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
+  background-color: #d8ad14;
   box-shadow: 0 0 1rem #ffc600;
+
+  .sound, kbd {
+    color: #fff;
+  }
 }
+
 
 kbd {
   display: block;

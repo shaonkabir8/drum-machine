@@ -37,7 +37,7 @@ const App = () => {
 
   return ( 
     <Fragment>
-      <div className="key-container">
+      <div className="drum-container">
         <div className="keys">
         <div data-key="81" className="key">
           <kbd>Q</kbd>
