@@ -77,3 +77,39 @@ kbd {
   font-size: 12px;
   font-weight: normal;
 }
+
+
+// Sidebar Controll
+.sidebar-controller {
+  width: 117px;
+  height: 270px;
+  display: inline-block;
+  margin: 50px 20px 0 10px;
+  vertical-align: top;
+  text-align: center;
+
+  .control {
+    width: 100px;
+    margin: auto;
+
+    p {
+      margin-bottom: 5px;
+    }
+    .select {
+      margin: auto;
+      border: 1px solid transparent;
+      width: 60px;
+      height: 20px;
+      background-color: black;
+
+      .toggle-power {
+        width: 27px;
+        height: 19px;        
+        background: #ffc12f;        
+        border: 1px solid black;       
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+    }
+  }
+}
