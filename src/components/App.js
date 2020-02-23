@@ -15,7 +15,6 @@ const App = () => {
     // If exists,
     key.classList.add('playing');
     audio.currentTime = 0;
-    audio.type = 'audio/wav';
     audio.play();
   }
   // TODO: 
@@ -79,15 +78,15 @@ const App = () => {
       </div>
     </div>
 
-    <audio data-key="65" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
-    <audio data-key="83" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>
-    <audio data-key="68" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>
-    <audio data-key="70" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"></audio>
-    <audio data-key="71" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"></audio>
-    <audio data-key="72" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"></audio>
-    <audio data-key="74" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"></audio>
-    <audio data-key="75" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>
-    <audio data-key="76" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"></audio>
+    <audio data-key="81" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
+    <audio data-key="87" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>
+    <audio data-key="69" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>
+    <audio data-key="65" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"></audio>
+    <audio data-key="83" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"></audio>
+    <audio data-key="68" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"></audio>
+    <audio data-key="90" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"></audio>
+    <audio data-key="88" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>
+    <audio data-key="67" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"></audio>
   </Fragment>
   );
 }
