@@ -51,6 +51,21 @@ const App = () => {
   }, [])
 
 
+  // function for Volume Adjust
+  const adjustVolume = (e) => {
+    if (power) {
+      setVolume(e.target.value);
+      setDisplayMessage("Volume: " + Math.round(e.target.value * 100));
+
+      // Clear Display message
+      setTimeout(() => clearDisplay(), 1000);
+    }
+  }
+  const clearDisplay = () => {
+    setDisplayMessage("Adjust Volume")
+  }
+
+
   return (
     <Fragment>
       <div className="drum-container">
@@ -104,7 +119,7 @@ const App = () => {
 						{displayMessage}
 					</p>
 					<div className="volume-slider">
-						<input type="range" min="0" max="1" step="0.01" value={volume} />
+						<input type="range" min="0" max="1" step="0.01" value={volume} onChange={adjustVolume} />
 					</div>
         </div>
       </div>
