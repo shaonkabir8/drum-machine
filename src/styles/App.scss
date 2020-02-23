@@ -21,7 +21,7 @@ body {
 .drum-container {
   outline: 3px dashed #797878;
   position: relative;
-  width: 660px;
+  width: 680px;
   background-color: #959494;
   box-shadow: 0 0 20px;
 }
@@ -81,7 +81,7 @@ kbd {
 
 // Sidebar Controll
 .sidebar-controller {
-  width: 117px;
+  width: 150px;
   height: 270px;
   display: inline-block;
   margin: 50px 20px 0 10px;
@@ -112,4 +112,25 @@ kbd {
       }
     }
   }
+
+  // Preview Display
+
+  #display {
+    width: 150px;
+    background-color: gray;
+    margin: 40px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+  // Volume Controller
+
+
+  input[type="range"] {
+    margin: 12.5px 0;
+    width: 100%;
+  }
+
+
 }

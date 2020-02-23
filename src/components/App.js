@@ -5,6 +5,8 @@ const App = () => {
   
   
   const [power, setPower] = useState(true)
+  const [displayMessage, setDisplayMessage] = useState("Adjust Volume");
+  const [volume, setVolume]  = useState(0.3)
   
 
   // function to controll power
@@ -98,6 +100,12 @@ const App = () => {
               <div className="toggle-power" onClick={e => togglePower(e)} style={{'float': 'right'}}></div>
             </div>
           </div>
+          <p id="display">
+						{displayMessage}
+					</p>
+					<div className="volume-slider">
+						<input type="range" min="0" max="1" step="0.01" value={volume} />
+					</div>
         </div>
       </div>
 
